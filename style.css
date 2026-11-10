@@ -1,0 +1,22 @@
+.stTabs [data-baseweb="tab-list"]{
+    gap:20px;
+}
+
+.stTabs [data-baseweb="tab"]{
+
+    height:55px;
+
+    padding-left:25px;
+    padding-right:25px;
+
+    border-radius:12px;
+
+    background:#F5F5F5;
+
+    font-size:18px;
+
+    font-weight:600;
+}
+
+
+
