@@ -50,8 +50,8 @@ PROGRESS_STEPS = [
     {
         "name": "PROSES IJIN",
         "status_col": "PROSES IJIN",
-        "estimate_col": "TGL ESTIMASI PROSES IJIN",
-        "real_col": "TGL  REALISASI PROSES IJIN",
+        "estimate_col": "TGL ESTIMASI PROSES IZIN",
+        "real_col": "TGL  REALISASI PROSES IZIN",
     },
 
     {
@@ -871,6 +871,10 @@ def show_progress_timeline(
     row,
     selected_proposal
 ):
+        # Hapus nama kolom duplikat, pertahankan kolom pertama
+    row = row[
+        ~row.index.duplicated(keep="first")
+    ]
 
     st.markdown(
         f"# Progress Proposal  — {selected_proposal}"
