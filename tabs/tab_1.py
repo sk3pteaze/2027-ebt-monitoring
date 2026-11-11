@@ -265,6 +265,7 @@ def tab_1():
 
         [
             proposal_col,
+            "CAB",
             "KOORDINAT LOKASI",
             "TGL ESTIMASI GO",
             bulan_go_col,
